@@ -1,0 +1,38 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'eu.appsatori.fatjar'
+
+version = '0.1'
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
+// Config for plugin
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'eu.appsatori:gradle-fatjar-plugin:0.3'
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+	compile 'org.jsoup:jsoup:1.8.1'
+}
+
+fatJar {
+    manifest {
+        attributes 'Main-Class' : 'jp.co.uz.main.MainLogic'
+        attributes 'Implementation-Title': 'rssAnalyzer',
+        'Implementation-Version': version
+    }
+    classifier 'assembly'
+
+    destinationDir = file('./dist')
+    archiveName = 'rssAnalyzer-' + version + '.jar'
+}

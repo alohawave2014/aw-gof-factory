@@ -1,0 +1,11 @@
+#コメント
+#ディレクトリは最後にスラッシュ
+.gradle/
+.settings/
+bin/
+.classpath
+.project
+
+#/webapp/WEB-INF/classes/*
+#/webapp/WEB-INF/lib/*
+#/webapp/WEB-INF/appengine-generated
