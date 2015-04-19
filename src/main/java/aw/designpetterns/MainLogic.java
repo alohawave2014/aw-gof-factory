@@ -3,7 +3,7 @@ package aw.designpetterns;
 import aw.designpetterns.analyzer.writer.RssAnalyzer;
 
 /**
- * Abstract factrory patternサンプル
+ * Factrory patternサンプル
  * [仕様]
  * 第1引数: 【必須】出力形式 (1: 標準出力、 2: ファイル出力) 
  * 第2引数: 【必須】URL (|　で区切ることにより複数指定可能。 eg.  www.hoge.com | www.foge.com | ...)

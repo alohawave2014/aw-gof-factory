@@ -1,7 +1,7 @@
 package aw.designpetterns.analyzer.writer.base;
 
 /**
- * Abstract Factoryパターンによるwriter実装
+ * Factoryパターンによるwriter実装
  */
 public abstract class RssWriterObject {
 

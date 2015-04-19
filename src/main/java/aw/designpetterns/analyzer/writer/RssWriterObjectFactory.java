@@ -3,7 +3,7 @@ package aw.designpetterns.analyzer.writer;
 import aw.designpetterns.analyzer.writer.base.RssWriterObject;
 
 /**
- * Abstract Factoryパターンによるwriter実装
+ * Factoryパターンによるwriter実装
  */
 public class RssWriterObjectFactory {
 
