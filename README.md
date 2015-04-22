@@ -1,8 +1,8 @@
 # design patterns sample
 ## 処理概要
-1.rss指定して実行
-2.rss.xml内の特定文字列を、別文字列に置換
-3.出力  
+1. rss指定して実行
+2. rss.xml内の特定文字列を、別文字列に置換
+3. 出力
 factory pattern利用
 
 ## factory pattern
